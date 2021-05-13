@@ -1,11 +1,11 @@
 runtime: python39
 
 env_variables:
-  CLOUD_SQL_USERNAME: root
-  CLOUD_SQL_PASSWORD: ccprojectadmin@2021
-  CLOUD_SQL_DATABASE_NAME: medicine
-  CLOUD_SQL_CONNECTION_NAME: medicine-expiry-rmdr:us-central1:medicine-database-2021
-  CLOUD_STORAGE_BUCKET: medicine-expiry-reminder
+  CLOUD_SQL_USERNAME: 
+  CLOUD_SQL_PASSWORD: 
+  CLOUD_SQL_DATABASE_NAME: 
+  CLOUD_SQL_CONNECTION_NAME: 
+  CLOUD_STORAGE_BUCKET: 
 
 handlers:
   # This configures Google App Engine to serve the files in the app's static
