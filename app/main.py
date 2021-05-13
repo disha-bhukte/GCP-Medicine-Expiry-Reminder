@@ -53,7 +53,7 @@ if os.environ.get('GAE_ENV') != 'standard':
     db_user = 'root'
     db_password = '1234'
     db_name = 'medicine'
-    db_connection_name = 'central-hold-309522:us-east1:medicine-database-2021'
+    db_connection_name = ''
 ###########################################
 
 ###########################################
@@ -72,7 +72,7 @@ CORS(app)
 
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
-GOOGLE_CLIENT_ID = "553273958734-jt89rtkjfpucu72vdj9e8caiukfo6hs4.apps.googleusercontent.com"
+GOOGLE_CLIENT_ID = ""
 client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
 ###########################################
 
@@ -85,15 +85,14 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = gcp_credential
 ###########################################
 # Google EMail API
 ###########################################
-ADMIN_MAIL_ID = "medicineexpiryapp@gmail.com"
-ADMIN_MAIL_PASSWORD = "Ccproject@2021"
+ADMIN_MAIL_ID = ""
+ADMIN_MAIL_PASSWORD = ""
 ##########################################
 flow = Flow.from_client_secrets_file(
     client_secrets_file=client_secrets_file,
     scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email",
             "openid"],
-    # redirect_uri="https://medicine-expiry-rmdr.uc.r.appspot.com/callback"
-    redirect_uri="https://medicine-expiry-rmdr.uc.r.appspot.com/callback"
+    redirect_uri=""
 )
 
 
