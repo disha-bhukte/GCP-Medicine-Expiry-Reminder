@@ -2,8 +2,8 @@
 ## Project 2 - PaaS - Google App Engine (CSE 546 - Cloud Computing)
 
 ## ASU Group Members
-* Akash Patel 
 * Disha Bhukte
+* Akash Patel 
 * Sapan Desai  
 
 #### Details are provided in the report.
